@@ -7,6 +7,10 @@ public class a_Persona {
     private double sueldo;
     private boolean eliminado;
 
+    public a_Persona() {
+    }
+
+    
     public a_Persona(String nombre, double sueldo, boolean eliminado) {
         this.nombre = nombre;
         this.sueldo = sueldo;
@@ -36,4 +40,13 @@ public class a_Persona {
     public void setEliminado(boolean eliminado) {
         this.eliminado = eliminado;
     }
+
+    @Override
+    public String toString() {
+        return "a_Persona{" + "nombre=" + nombre + 
+                ", sueldo=" + sueldo + 
+                ", eliminado=" + eliminado + '}';
+    }
+    
+    
 }
