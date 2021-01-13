@@ -19,10 +19,12 @@ public class c_TestHerencia {
         System.out.println("");
         
         
-        cc_Cliente_Herencia cliente1=new cc_Cliente_Herencia(new Date(), true, "Nancy", 'F', 21, "Emilio Carranza No.9");
+        var fecha=new Date();
+        cc_Cliente_Herencia cliente1=new cc_Cliente_Herencia(fecha, true, "Nancy", 'F', 21, "Emilio Carranza No.9");
         System.out.println("cliente1: "+cliente1);
         
-        cc_Cliente_Herencia cliente2=new cc_Cliente_Herencia(new Date(), true, "Ramces", 'M', 22, "San Bernabe 125");
+        
+        cc_Cliente_Herencia cliente2=new cc_Cliente_Herencia(fecha, true, "Ramces", 'M', 22, "San Bernabe 125");
         System.out.println("cliente1: "+cliente2);
     }
  

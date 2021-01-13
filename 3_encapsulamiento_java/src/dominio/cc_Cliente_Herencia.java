@@ -8,11 +8,9 @@ public class cc_Cliente_Herencia extends ca_Persona_Herencia {
     private static int contadorCliente;
     private Date fechaRegistro;
     private boolean vip;
-    
+
     public cc_Cliente_Herencia() {
     }
-    
-    
 
     public cc_Cliente_Herencia(Date fechaRegistro, boolean vip, String nombre, char genero, int edad, String direccion) {
         super(nombre, genero, edad, direccion);
@@ -20,8 +18,6 @@ public class cc_Cliente_Herencia extends ca_Persona_Herencia {
         this.fechaRegistro = fechaRegistro;
         this.vip = vip;
     }
-    
-    
 
     public int getIdCliente() {
         return idCliente;
@@ -45,10 +41,7 @@ public class cc_Cliente_Herencia extends ca_Persona_Herencia {
 
     @Override
     public String toString() {
-        return "cc_Cliente_Herencia{" + "idCliente=" + idCliente + ", {" + super.toString() +"} , fechaRegistro=" + fechaRegistro + ", vip=" + vip + '}';
+        return "cc_Cliente_Herencia{" + "idCliente=" + idCliente + ", {" + super.toString() + "} , fechaRegistro=" + fechaRegistro + ", vip=" + vip + '}';
     }
-    
-    
-    
-    
+
 }
